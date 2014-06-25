@@ -6,9 +6,11 @@ import "os"
 func first() {
     fmt.Println("1st")
 }
+
 func second() {
     fmt.Println("2nd")
 }
+
 func main() {
     // Go has a special statement called defer which schedules a function call to be run after the function completes. Consider the following example:
     defer second()

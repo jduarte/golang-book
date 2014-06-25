@@ -10,7 +10,7 @@ func main() {
     x[2] = 77
     x[3] = 82
     x[4] = 83
-    
+
     var total1 float64 = 0
     for i := 0; i < 5; i++ {
         total1 += x[i]
@@ -43,11 +43,11 @@ func main() {
 
     // Ways of declarating arrays
     var _ = [5]float64{ 98, 93, 77, 82, 83 }
-    var _ = [4]float64{ 
-        98, 
-        93, 
-        77, 
-        82, 
+    var _ = [4]float64{
+        98,
+        93,
+        77,
+        82,
         // 83,
     }
 

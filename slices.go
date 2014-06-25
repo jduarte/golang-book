@@ -36,6 +36,4 @@ func main() {
     slice4 := make([]int, 2)
     copy(slice4, slice3)
     fmt.Println(slice3, slice4)
-}   
-
-
+}

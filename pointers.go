@@ -60,4 +60,3 @@ func main() {
     swap(&x1, &x2)
     fmt.Println("x1:", x1, "x2:", x2)
 }
-

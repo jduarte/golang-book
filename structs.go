@@ -28,12 +28,12 @@ func main() {
   // This allocates memory for all the fields, sets each of them to their zero value and returns a pointer. (*Circle)
   //c1 := new(Circle)
 
-  // More often we want to give each of the fields a value. 
+  // More often we want to give each of the fields a value.
   c2 := Circle{x: 0, y: 0, r: 5}
-  
+
   // Or we can leave off the field names if we know the order they were defined:
   c3 := Circle{0, 0, 5}
-  
+
   fmt.Println(c2.x, c2.y, c2.r)
 
 

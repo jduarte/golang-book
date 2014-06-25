@@ -36,13 +36,13 @@ func printer(c chan string) {
 func main() {
     // A channel type is represented with the keyword chan followed by the type of the things that are passed on the channel
     var c chan string = make(chan string)
-    
+
     // Using a channel like this synchronizes the two goroutines. When pinger attempts to send a message on the channel
     // it will wait until printer is ready to receive the message. (this is known as blocking)
     go pinger(c)
     go ponger(c)
     go printer(c)
-    
+
     var input string
     fmt.Scanln(&input)
 }

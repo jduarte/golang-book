@@ -8,7 +8,7 @@ import (
 func main() {
     c1 := make(chan string)
     c2 := make(chan string)
-    
+
     go func() {
         for {
             c1 <- "from 1"
@@ -46,7 +46,7 @@ func main() {
     case <- time.After(time.Second):
         fmt.Println("timeout")
     }
-    
+
     var input string
     fmt.Scanln(&input)
 }
